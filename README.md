@@ -1,6 +1,8 @@
 # kaldi-asr-aws
 This code repo is in reference to the Medium Article for setting up Kaldi on AWS
 
+https://crossregionreplpuri.s3.ap-south-1.amazonaws.com/model.zip
+
 */1 * * * * sh ~/getConvertAudios.sh
 */2 * * * * sh ~/uploadOutput.sh
 
