@@ -1,6 +1,9 @@
 # kaldi-asr-aws
 This code repo is in reference to the Medium Article for setting up Kaldi on AWS
 
+https://www.johnvansickle.com/ffmpeg/
+ffmpeg-release-amd64-static.tar.xz - md5
+
 https://crossregionreplpuri.s3.ap-south-1.amazonaws.com/model.zip
 
 */1 * * * * sh ~/getConvertAudios.sh
