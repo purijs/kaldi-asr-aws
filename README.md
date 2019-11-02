@@ -66,3 +66,6 @@ Refer Medium Article
 
 #### - ffmpeg
 Download **ffmpeg-release-amd64-static.tar.xz - md5** from [here](https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz "here")
+
+#### - Kaldi Model
+Download model.zip from here - https://crossregionreplpuri.s3.ap-south-1.amazonaws.com/model.zip
