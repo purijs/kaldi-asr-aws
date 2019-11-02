@@ -1,6 +1,5 @@
 
 FROM debian:9.8
-LABEL maintainer="mdoulaty@gmail.com"
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
