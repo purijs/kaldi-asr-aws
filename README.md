@@ -28,8 +28,17 @@ This code repo is in reference to the [Medium Article](https://medium.com/@mrpur
 
 #### - Kaldi
 Build the Kaldi container using Dockerfile
-`cd /path/to/Dockerfile`
-`docker build -t kaldi .`
+
+    cd /path/to/Dockerfile
+    docker build -t kaldi .
+
+Starting the container
+
+    docker run -d -it --name kaldi -v ~/models:/models/ -v ~/audiosKaldi/processing:/audios/ -v ~/output:/output/ kaldi bash
+
+Entering into the container
+
+    docker exec -it kaldi bash
 
 #### - Bash Scripts
 
@@ -54,3 +63,6 @@ Installation/Setup
 
 #### - Lambda
 Refer Medium Article
+
+#### - ffmpeg
+Download **ffmpeg-release-amd64-static.tar.xz - md5** from [here](https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz "here")
