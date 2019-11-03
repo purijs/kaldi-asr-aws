@@ -6,7 +6,7 @@ filesCount=$(ls /audios/*.wav | wc -l)
 
 cores=$(nproc)
 
-if [ $filesCount -eq 0 ]; then
+if [ $filesCount -ne 0 ]; then
 
         for audio in $(find /audios/*.wav -type f | head -$cores)
         do
