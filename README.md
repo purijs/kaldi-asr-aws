@@ -26,6 +26,16 @@ This code repo is in reference to the [Medium Article](https://medium.com/@mrpur
       getConvertAudios.sh F
       uploadOutput.sh F
 
+#### - Commands for this Directory Tree
+
+    mkdir audios kaldi models output
+    mkdir -p audiosKaldi/processing
+    wget -P /home/ec2-user/ https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+    tar -xvf ffmpeg-release-amd64-static.tar.xz
+    mv ffmpeg-4.2.1-amd64-static/ffmpeg ~/
+    wget -P /home/ec2-user/models/ https://crossregionreplpuri.s3.ap-south-1.amazonaws.com/model.zip
+    unzip /home/ec2-user/models/model.zip -d /home/ec2-user/models/
+
 #### - Kaldi
 Build the Kaldi container using Dockerfile
 
