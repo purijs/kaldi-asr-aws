@@ -35,7 +35,7 @@ def index():
 
             try:
                 
-                # Remove dots(.) from filenames
+                # Remove spaces from filenames
                 data_file.filename=str(data_file.filename).replace(' ','')
                 customerFiles.append(data_file.filename)
                 
