@@ -20,7 +20,8 @@ def index():
     customerFiles=[]
 
     if request.method == 'POST':
-
+        
+        # Remove dots(.) from filenames
         customerKey=request.form['email'].split('@')[0].replace('.','_')
 
         # YOUR AWS IAM ACCESS KEY AND SECRET, GET IT FROM THE IAM CONSOLE
@@ -34,8 +35,11 @@ def index():
 
             try:
                 
+                # Remove dots(.) from filenames
                 data_file.filename=str(data_file.filename).replace(' ','')
                 customerFiles.append(data_file.filename)
+                
+                # To identify a user's file, append email to filename with a fixed seperator
                 filename=customerKey+'_sep_'+data_file.filename
 
                 # ENTER YOUR BUCKET NAME
